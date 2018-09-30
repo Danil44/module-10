@@ -1,0 +1,118 @@
+.section__desc {
+    margin-top: -5px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 87px;
+    width: 954px;
+}
+
+.team-list {
+    padding-bottom: 66px;
+}
+
+.member-card {
+    position: relative;
+}
+
+.member-card__name {
+    font-size: 14px;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: -5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.member-card__ocupation {
+    font-size: 15px;
+    color: #999999;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+.member-card__wrapper {
+    transition: 0.2s linear;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 21px;
+}
+
+.member-card__wrapper--hover:hover {
+    transform: translate(-4%, -2%);
+    box-shadow: 15px 10px  #95e1d3;
+    opacity: 1;
+}
+
+.member-card__wrapper--hover:hover .member-card__gradient--hover {
+    opacity: 1;
+}
+
+.member-card__wrapper--hover:hover .member-card__icons{
+    opacity: 1;
+} 
+
+.member-card__gradient {
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%);
+    width: 385px;
+    height: 473px;
+    top: 0%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s
+}
+
+.icon-wrapper {
+    background-color: #fce38a;
+    width: 56px;
+    height: 56px;
+    margin-right: 1px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.member-card__icons {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-35%, -50%);
+    opacity: 0;
+}
+
+.icons {
+    position: absolute;
+    top: 22%;
+    fill: #f38181;
+    transition: 0.2s linear;
+    cursor: pointer;
+    
+}
+
+.icon-wrapper--hover:hover {
+    background-color: #f38181;
+    
+}
+
+.icon-wrapper--hover:hover .icons--hover {
+    fill: #ffffff;
+}
+
+.facebook__icon {
+    left: 10%;
+}
+
+.twitter__icon {
+    left: 32%;
+    top: 26%;
+}
+
+.pinterest__icon {
+    left: 131px;
+}
+
+.instagram__icon {
+    left: 186px;
+}

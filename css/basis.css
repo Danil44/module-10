@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+.link {
+    
+    text-decoration: none;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visually-hidden {
+    display:  block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    font-size: 2px
+}
+
+:hover {
+    transition: 0.2s linear;
+}
