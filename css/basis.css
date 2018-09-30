@@ -1,9 +1,10 @@
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .link {
-    
+
     text-decoration: none;
 }
 
@@ -11,12 +12,16 @@ html {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .visually-hidden {
-    display:  block;
+    display: block;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -24,5 +29,7 @@ html {
 }
 
 :hover {
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }

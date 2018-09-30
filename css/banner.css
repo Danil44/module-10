@@ -44,14 +44,15 @@
     border: 3px solid #ffffff;
     padding: 9px 28px;
     cursor: pointer;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 
-.btn--hover:hover{
+.btn--hover:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
-  
+
     border-color: #f38181;
 }
-
-
-

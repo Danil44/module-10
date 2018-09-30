@@ -34,6 +34,8 @@
 }
 
 .member-card__wrapper {
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
     cursor: pointer;
     position: relative;
@@ -41,8 +43,11 @@
 }
 
 .member-card__wrapper--hover:hover {
+    -webkit-transform: translate(-4%, -2%);
+    -ms-transform: translate(-4%, -2%);
     transform: translate(-4%, -2%);
-    box-shadow: 15px 10px  #95e1d3;
+    -webkit-box-shadow: 15px 10px #95e1d3;
+    box-shadow: 15px 10px #95e1d3;
     opacity: 1;
 }
 
@@ -50,17 +55,22 @@
     opacity: 1;
 }
 
-.member-card__wrapper--hover:hover .member-card__icons{
+.member-card__wrapper--hover:hover .member-card__icons {
     opacity: 1;
-} 
+}
 
 .member-card__gradient {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.81)), to(rgba(243, 129, 129, 0.81)));
+    background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%);
+    background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%);
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%);
     width: 385px;
     height: 473px;
     top: 0%;
     position: absolute;
     opacity: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s
 }
 
@@ -70,14 +80,20 @@
     height: 56px;
     margin-right: 1px;
     cursor: pointer;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 
 .member-card__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 50%;
     right: 0;
+    -webkit-transform: translate(-35%, -50%);
+    -ms-transform: translate(-35%, -50%);
     transform: translate(-35%, -50%);
     opacity: 0;
 }
@@ -86,14 +102,16 @@
     position: absolute;
     top: 22%;
     fill: #f38181;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
     transition: 0.2s linear;
     cursor: pointer;
-    
+
 }
 
 .icon-wrapper--hover:hover {
     background-color: #f38181;
-    
+
 }
 
 .icon-wrapper--hover:hover .icons--hover {
